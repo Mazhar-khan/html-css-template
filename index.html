@@ -14,64 +14,144 @@
 <body>
     <div>
         <nav class="navbar navbar-expand-lg bg-dark">
-            <div class="container-fluid ">
+            <div class="container-fluid" style="margin-left:3%">
                 <a class="navbar-brand text-light" href="#">
                     <i class="bi bi-list"></i>
                 </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                <button class="navbar-toggler " type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
             </div>
+            <div style="margin-right: 2%;">
+                <i class="bi bi-person-fill text-light mr-4 "></i>
+            </div>
         </nav>
         <div class="d-flex flex-row w-100">
             <div class="left-menu h-100">
                 <ul class="menu-items">
-                    <li class="mt-4">About</li>
-                    <li class="mt-4">Contact</li>
-                    <li class="mt-4">Services</li>
+                    <li class="mt-4"><a href="pages/prdouct.html">Product</a></li>
+                    <li class="mt-4">Category</li>
+                    <li class="mt-4">Shop</li>
                     <li class="mt-4">Customers</li>
                     <li class="mt-4">Rate Us</li>
                 </ul>
             </div>
             <div class="right-side h-100 w-100">
-                <table class="table table-striped">
-                    <thead>
-                        <tr>
-                            <th scope="col">#</th>
-                            <th scope="col">First</th>
-                            <th scope="col">Last</th>
-                            <th scope="col">Handle</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <th scope="row">1</th>
-                            <td>Mark</td>
-                            <td>Otto</td>
-                            <td>@mdo</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">2</th>
-                            <td>Jacob</td>
-                            <td>Thornton</td>
-                            <td>@fat</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">3</th>
-                            <td>Larry</td>
-                            <td>the Bird</td>
-                            <td>@twitter</td>
-                        </tr>
-                    </tbody>
+                <div style="float: right ; margin: 5px;">
+                    <button type="button" class="btn btn-outline-success">
+                        Add Product
+                    </button>
+                </div>
+                <table id="customers">
+                    <tr>
+                        <th>Name</th>
+                        <th>Category</th>
+                        <th>Owner</th>
+                        <th>Action</th>
+                    </tr>
+                    <tr>
+                        <td>Alfreds Futterkiste</td>
+                        <td>Maria Anders</td>
+                        <td>Germany</td>
+                        <td>
+                            <i class="bi bi-pencil-square"></i>
+                            <i class="bi bi-archive"></i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Berglunds snabbköp</td>
+                        <td>Christina Berglund</td>
+                        <td>Sweden</td>
+                        <td>
+                            <i class="bi bi-pencil-square"></i>
+                            <i class="bi bi-archive"></i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Centro comercial Moctezuma</td>
+                        <td>Francisco Chang</td>
+                        <td>Mexico</td>
+                        <td>
+                            <i class="bi bi-pencil-square"></i>
+                            <i class="bi bi-archive"></i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Ernst Handel</td>
+                        <td>Roland Mendel</td>
+                        <td>Austria</td>
+                        <td>
+                            <i class="bi bi-pencil-square"></i>
+                            <i class="bi bi-archive"></i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Island Trading</td>
+                        <td>Helen Bennett</td>
+                        <td>UK</td>
+                        <td>
+                            <i class="bi bi-pencil-square"></i>
+                            <i class="bi bi-archive"></i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Königlich Essen</td>
+                        <td>Philip Cramer</td>
+                        <td>Germany</td>
+                        <td>
+                            <i class="bi bi-pencil-square"></i>
+                            <i class="bi bi-archive"></i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Laughing Bacchus Winecellars</td>
+                        <td>Yoshi Tannamuri</td>
+                        <td>Canada</td>
+                        <td>
+                            <i class="bi bi-pencil-square"></i>
+                            <i class="bi bi-archive"></i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Magazzini Alimentari Riuniti</td>
+                        <td>Giovanni Rovelli</td>
+                        <td>Italy</td>
+                        <td>
+                            <i class="bi bi-pencil-square"></i>
+                            <i class="bi bi-archive"></i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>North/South</td>
+                        <td>Simon Crowther</td>
+                        <td>UK</td>
+                        <td>
+                            <i class="bi bi-pencil-square"></i>
+                            <i class="bi bi-archive"></i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Paris spécialités</td>
+                        <td>Marie Bertrand</td>
+                        <td>France</td>
+                        <td>
+                            <i class="bi bi-pencil-square"></i>
+                            <i class="bi bi-archive"></i>
+                        </td>
+                    </tr>
                 </table>
+               
             </div>
         </div>
     </div>
+   
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
-        crossorigin="anonymous"></script>
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous">
+    </script>
+    
 </body>
 
 </html>

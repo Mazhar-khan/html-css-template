@@ -2,18 +2,46 @@
     font-family: "Lato", sans-serif;
 }
 .left-menu{
-    background-color: blueviolet;
+    background-color: black;
     width: 15%;
     height: 100% !important;
     position: fixed;
+    color: antiquewhite;
 }
 .right-side{
-    background-color: aqua;
+   
     width: 85%;
 }
 .menu-items{
     list-style-type: none;
+    color: antiquewhite;
 }
 li{
     font-size: 17px;
 }
+a {
+    text-decoration: none !important;
+    color: white !important;
+}
+#customers {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  #customers td, #customers th {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  #customers tr:nth-child(even){background-color: #f2f2f2;}
+  
+  #customers tr:hover {background-color: #ddd;}
+  
+  #customers th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #04AA6D;
+    color: white;
+  }
